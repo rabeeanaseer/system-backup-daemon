@@ -1,182 +1,221 @@
-# System Monitor & Automated Backup Daemon
+# 🛡️ System Monitor & Automated Backup Daemon
 
-A background Python daemon that continuously monitors system health and automatically backs up directories when changes are detected.
+<div align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Architecture-Modular-orange?style=for-the-badge)
 
-## Features
+### 🚀 Intelligent Python daemon for real-time system monitoring, automated versioned backups, filesystem event detection, scheduled backup orchestration, and CLI-based recovery.
 
-| Feature | Details |
-|---|---|
-| **CPU / RAM / Disk monitoring** | Polls every 5 s, logs warnings at configurable thresholds |
-| **Filesystem watchdog** | Detects file create / modify / delete / move in watched dirs |
-| **Auto-backup on change** | Debounced — waits 10 s after last event before zipping |
-| **Scheduled backups** | Full backup of all watched dirs every hour |
-| **Versioned archives** | Timestamped ZIPs; keeps latest N, prunes oldest automatically |
-| **Backup recovery** | CLI tool to list and restore any saved version |
-| **Rotating logs** | Separate log files per component, 10 MB max, 5 rotations |
+</div>
 
 ---
 
-## File Layout
+## 🎥 Live Demonstration
+
+> 📹 **Watch the daemon running in real time**
+
+https://github.com/USERNAME/system-backup-daemon/assets/your-video
+
+*(Replace with your uploaded GitHub video.)*
+
+---
+
+# 📖 Overview
+
+This project is a production-style Python daemon that continuously monitors system resources while watching selected directories for filesystem activity. Whenever changes occur, it intelligently creates versioned ZIP backups, maintains backup history, and provides a command-line recovery interface.
+
+The application demonstrates practical software engineering concepts including:
+
+- Event-driven programming
+- Background services
+- Concurrent execution
+- Filesystem monitoring
+- Automated scheduling
+- Logging
+- Configuration management
+- Fault-tolerant automation
+
+---
+
+# ✨ Features
+
+| Feature | Description |
+|----------|-------------|
+| 📊 System Monitoring | Real-time CPU, RAM and Disk monitoring |
+| 👀 Filesystem Watchdog | Detects file creation, deletion, modification and rename events |
+| ⚡ Event-driven Backups | Automatically creates backups after filesystem changes |
+| ⏱ Scheduled Backups | Performs periodic full backups |
+| 📦 Versioned Archives | Timestamped ZIP archives with automatic pruning |
+| ♻️ Backup Recovery | Restore previous backups through CLI |
+| 📝 Rotating Logs | Persistent structured logging with automatic rotation |
+| ⚙️ Configurable | Easily customize thresholds, directories and schedules |
+
+---
+
+# 🏗 Architecture
 
 ```
-02-system-backup-daemon/
-├── daemon.py          ← main entry point (start here)
-├── config.py          ← all tuneable settings
-├── system_monitor.py  ← CPU / RAM / disk polling
-├── watchdog_handler.py← filesystem event watcher
-├── backup_engine.py   ← ZIP creation, versioning, pruning
-├── scheduler.py       ← timed full-backup loop
-├── recovery_cli.py    ← restore tool
-├── logger_setup.py    ← shared rotating logger
+                +------------------+
+                |    daemon.py     |
+                +---------+--------+
+                          |
+          +---------------+---------------+
+          |                               |
+          |                               |
++---------v---------+           +---------v---------+
+| System Monitor    |           | Watchdog Handler  |
+| CPU • RAM • Disk  |           | Filesystem Events |
++---------+---------+           +---------+---------+
+          |                               |
+          |                               |
+          +---------------+---------------+
+                          |
+                  +-------v--------+
+                  | Backup Engine  |
+                  | ZIP Versioning |
+                  +-------+--------+
+                          |
+               +----------v----------+
+               | Backup Storage      |
+               +----------+----------+
+                          |
+                +---------v---------+
+                | Recovery CLI      |
+                +-------------------+
+```
+
+---
+
+# 📂 Project Structure
+
+```
+system-backup-daemon/
+│
+├── daemon.py
+├── backup_engine.py
+├── watchdog_handler.py
+├── system_monitor.py
+├── scheduler.py
+├── recovery_cli.py
+├── logger_setup.py
+├── config.py
 ├── requirements.txt
-├── backups/           ← generated archives (git-ignored)
-└── logs/              ← generated log files (git-ignored)
+│
+├── backups/
+└── logs/
 ```
 
 ---
 
-## Setup
+# ⚙️ Installation
 
 ```bash
-cd 02-system-backup-daemon
+git clone https://github.com/USERNAME/system-backup-daemon.git
 
-# Install dependencies
+cd system-backup-daemon
+
 pip install -r requirements.txt
 ```
 
 ---
 
-## Run the Daemon
+# ▶️ Running
 
 ```bash
 python daemon.py
 ```
 
-Press **Ctrl-C** to stop cleanly. Logs appear both in the terminal and in `logs/`.
+The daemon starts monitoring immediately.
 
 ---
 
-## Configuration (`config.py`)
+# ⚙️ Configuration
+
+Modify **config.py**
 
 ```python
-# Directories to watch and back up
-WATCH_DIRS = ["~/Documents", "~/Desktop"]
+WATCH_DIRS = [
+    "~/Documents",
+    "~/Desktop"
+]
 
-# Where archives are stored
 BACKUP_DIR = "./backups"
 
-# Alert thresholds
-CPU_THRESHOLD_PCT   = 85.0
-RAM_THRESHOLD_PCT   = 80.0
-DISK_THRESHOLD_PCT  = 90.0
+CPU_THRESHOLD_PCT = 85
+RAM_THRESHOLD_PCT = 80
+DISK_THRESHOLD_PCT = 90
 
-# Seconds to wait after last fs event before triggering a backup
-WATCHDOG_DEBOUNCE_SECONDS = 10
-
-# How many versions to keep per watched directory
 MAX_VERSIONS_PER_DIR = 10
-
-# Scheduled backup interval (seconds)
-SCHEDULED_BACKUP_INTERVAL_SECONDS = 3600   # 1 hour
-
-# System monitor poll rate
-MONITOR_POLL_SECONDS = 5
 ```
 
 ---
 
-## Backup Recovery
+# 🔄 Backup Recovery
 
-**List all saved backups:**
+List backups
+
 ```bash
 python recovery_cli.py list
 ```
 
-**List backups for one directory:**
+Restore
+
 ```bash
-python recovery_cli.py list ~/Documents
+python recovery_cli.py restore backup.zip ~/restore
 ```
 
-**Restore a specific archive:**
-```bash
-python recovery_cli.py restore backups/Documents__20260621_143000.zip ~/restored
-```
+Interactive mode
 
-**Interactive guided restore:**
 ```bash
 python recovery_cli.py interactive
 ```
 
 ---
 
-## Run as a Background Service (Linux)
+# 📊 Technologies
 
-Create `/etc/systemd/system/backup-daemon.service`:
-
-```ini
-[Unit]
-Description=System Monitor & Backup Daemon
-After=network.target
-
-[Service]
-Type=simple
-User=YOUR_USERNAME
-WorkingDirectory=/path/to/02-system-backup-daemon
-ExecStart=/usr/bin/python3 daemon.py
-Restart=on-failure
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Then:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable backup-daemon
-sudo systemctl start backup-daemon
-sudo systemctl status backup-daemon
-```
+- Python
+- psutil
+- watchdog
+- threading
+- logging
+- zipfile
+- pathlib
+- argparse
 
 ---
 
-## Run as a Background Service (macOS launchd)
+# 💡 Engineering Concepts Demonstrated
 
-Create `~/Library/LaunchAgents/com.backup.daemon.plist`:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
-  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-  <key>Label</key>
-  <string>com.backup.daemon</string>
-  <key>ProgramArguments</key>
-  <array>
-    <string>/usr/bin/python3</string>
-    <string>/path/to/02-system-backup-daemon/daemon.py</string>
-  </array>
-  <key>RunAtLoad</key>
-  <true/>
-  <key>KeepAlive</key>
-  <true/>
-  <key>WorkingDirectory</key>
-  <string>/path/to/02-system-backup-daemon</string>
-</dict>
-</plist>
-```
-
-```bash
-launchctl load ~/Library/LaunchAgents/com.backup.daemon.plist
-```
+- Modular Software Architecture
+- Event-Driven Programming
+- Background Daemons
+- Concurrent Processing
+- Filesystem Monitoring
+- Logging & Observability
+- Configuration Management
+- CLI Development
+- Automated Scheduling
+- Fault Tolerance
 
 ---
 
-## Dependencies
+# 🚀 Future Improvements
 
-- `psutil` — system metrics (CPU, RAM, disk)
-- `watchdog` — cross-platform filesystem events
-- `zipfile`, `logging`, `threading` — Python standard library
+- Email notifications
+- Cloud backup support
+- Incremental backups
+- Web dashboard
+- Backup encryption
+- Docker deployment
+- GUI interface
+
+---
+
+# 📜 License
+
+MIT License
