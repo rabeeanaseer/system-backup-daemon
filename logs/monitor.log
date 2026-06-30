@@ -1,0 +1,91 @@
+2026-06-22 19:39:43  INFO      [monitor]  System monitor started (poll every 5s)
+2026-06-22 19:39:44  INFO      [monitor]  CPU  38.4%
+2026-06-22 19:39:44  WARNING   [monitor]  RAM  86.3%  (used: 7.3 GB / 8.5 GB)
+2026-06-22 19:39:44  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:39:50  INFO      [monitor]  CPU  24.6%
+2026-06-22 19:39:50  WARNING   [monitor]  RAM  86.5%  (used: 7.3 GB / 8.5 GB)
+2026-06-22 19:39:50  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:39:56  INFO      [monitor]  CPU  24.0%
+2026-06-22 19:39:56  WARNING   [monitor]  RAM  84.4%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:39:56  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:02  INFO      [monitor]  CPU  32.4%
+2026-06-22 19:40:02  WARNING   [monitor]  RAM  84.6%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:40:02  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:08  INFO      [monitor]  CPU  27.5%
+2026-06-22 19:40:08  WARNING   [monitor]  RAM  84.7%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:40:08  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:14  INFO      [monitor]  CPU  24.1%
+2026-06-22 19:40:14  WARNING   [monitor]  RAM  84.4%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:40:14  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:20  INFO      [monitor]  CPU  23.1%
+2026-06-22 19:40:20  WARNING   [monitor]  RAM  84.3%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:20  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:26  INFO      [monitor]  CPU  38.0%
+2026-06-22 19:40:26  WARNING   [monitor]  RAM  84.2%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:26  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:32  INFO      [monitor]  CPU  23.4%
+2026-06-22 19:40:32  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:32  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:38  INFO      [monitor]  CPU  28.7%
+2026-06-22 19:40:38  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:38  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:44  INFO      [monitor]  CPU  24.1%
+2026-06-22 19:40:44  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:44  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:50  INFO      [monitor]  CPU  31.9%
+2026-06-22 19:40:50  WARNING   [monitor]  RAM  83.8%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:50  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:40:56  INFO      [monitor]  CPU  29.7%
+2026-06-22 19:40:56  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:40:56  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:02  INFO      [monitor]  CPU  28.7%
+2026-06-22 19:41:02  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:41:02  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:08  INFO      [monitor]  CPU  25.1%
+2026-06-22 19:41:08  WARNING   [monitor]  RAM  83.9%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:41:08  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:14  INFO      [monitor]  CPU  67.3%
+2026-06-22 19:41:14  WARNING   [monitor]  RAM  84.8%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:41:14  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:20  INFO      [monitor]  CPU  38.9%
+2026-06-22 19:41:20  WARNING   [monitor]  RAM  84.2%  (used: 7.1 GB / 8.5 GB)
+2026-06-22 19:41:20  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:26  INFO      [monitor]  CPU  48.8%
+2026-06-22 19:41:26  WARNING   [monitor]  RAM  86.6%  (used: 7.3 GB / 8.5 GB)
+2026-06-22 19:41:26  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:32  INFO      [monitor]  CPU  21.0%
+2026-06-22 19:41:32  WARNING   [monitor]  RAM  86.8%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:41:32  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:38  INFO      [monitor]  CPU  51.5%
+2026-06-22 19:41:38  WARNING   [monitor]  RAM  87.3%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:41:38  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:44  INFO      [monitor]  CPU  45.4%
+2026-06-22 19:41:44  WARNING   [monitor]  RAM  87.4%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:41:44  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:50  INFO      [monitor]  CPU  32.4%
+2026-06-22 19:41:50  WARNING   [monitor]  RAM  87.7%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:41:50  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:41:56  INFO      [monitor]  CPU  22.9%
+2026-06-22 19:41:56  WARNING   [monitor]  RAM  86.1%  (used: 7.3 GB / 8.5 GB)
+2026-06-22 19:41:56  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:42:02  INFO      [monitor]  CPU  9.8%
+2026-06-22 19:42:02  WARNING   [monitor]  RAM  86.1%  (used: 7.3 GB / 8.5 GB)
+2026-06-22 19:42:02  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:42:08  INFO      [monitor]  CPU  40.4%
+2026-06-22 19:42:09  WARNING   [monitor]  RAM  85.4%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:42:09  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:42:12  INFO      [monitor]  System monitor stopped.
+2026-06-22 19:45:27  INFO      [monitor]  System monitor started (poll every 5s)
+2026-06-22 19:45:28  INFO      [monitor]  CPU  30.5%
+2026-06-22 19:45:28  WARNING   [monitor]  RAM  87.2%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:45:28  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:45:34  INFO      [monitor]  CPU  29.6%
+2026-06-22 19:45:34  WARNING   [monitor]  RAM  87.1%  (used: 7.4 GB / 8.5 GB)
+2026-06-22 19:45:34  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:45:40  INFO      [monitor]  CPU  29.0%
+2026-06-22 19:45:40  WARNING   [monitor]  RAM  85.4%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:45:40  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:45:46  INFO      [monitor]  CPU  28.5%
+2026-06-22 19:45:46  WARNING   [monitor]  RAM  85.4%  (used: 7.2 GB / 8.5 GB)
+2026-06-22 19:45:46  DEBUG     [monitor]  DISK C:\                   60.3%  (101.3 GB free)
+2026-06-22 19:45:48  INFO      [monitor]  System monitor stopped.

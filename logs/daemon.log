@@ -1,0 +1,14 @@
+2026-06-22 19:39:43  INFO      [daemon]  Starting daemon …
+2026-06-22 19:39:43  INFO      [daemon]  Backup directory : C:\Users\Black Horse\Downloads\system-backup-daemon\02-system-backup-daemon\backups
+2026-06-22 19:39:43  INFO      [daemon]  Log directory    : C:\Users\Black Horse\Downloads\system-backup-daemon\02-system-backup-daemon\logs
+2026-06-22 19:39:43  INFO      [daemon]  Watching         : ['C:\\Users\\Black Horse/Documents', 'C:\\Users\\Black Horse/Desktop']
+2026-06-22 19:39:43  INFO      [daemon]  Daemon running. Press Ctrl-C to stop.
+2026-06-22 19:42:12  INFO      [daemon]  Shutdown signal received (2). Stopping …
+2026-06-22 19:42:12  INFO      [daemon]  Daemon stopped cleanly. Goodbye.
+2026-06-22 19:45:27  INFO      [daemon]  Starting daemon …
+2026-06-22 19:45:27  INFO      [daemon]  Backup directory : C:\Users\Black Horse\Downloads\system-backup-daemon\02-system-backup-daemon\backups
+2026-06-22 19:45:27  INFO      [daemon]  Log directory    : C:\Users\Black Horse\Downloads\system-backup-daemon\02-system-backup-daemon\logs
+2026-06-22 19:45:27  INFO      [daemon]  Watching         : ['C:\\Users\\Black Horse/Documents', 'C:\\Users\\Black Horse/Desktop']
+2026-06-22 19:45:27  INFO      [daemon]  Daemon running. Press Ctrl-C to stop.
+2026-06-22 19:45:48  INFO      [daemon]  Shutdown signal received (2). Stopping …
+2026-06-22 19:45:48  INFO      [daemon]  Daemon stopped cleanly. Goodbye.

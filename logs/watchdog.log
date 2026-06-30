@@ -1,0 +1,8 @@
+2026-06-22 19:39:43  INFO      [watchdog]  Watching directory: C:\Users\Black Horse/Documents
+2026-06-22 19:39:43  WARNING   [watchdog]  Watch directory does not exist (skipped): C:\Users\Black Horse/Desktop
+2026-06-22 19:39:43  INFO      [watchdog]  Watchdog observer started.
+2026-06-22 19:42:12  INFO      [watchdog]  Watchdog observer stopped.
+2026-06-22 19:45:27  INFO      [watchdog]  Watching directory: C:\Users\Black Horse/Documents
+2026-06-22 19:45:27  WARNING   [watchdog]  Watch directory does not exist (skipped): C:\Users\Black Horse/Desktop
+2026-06-22 19:45:27  INFO      [watchdog]  Watchdog observer started.
+2026-06-22 19:45:48  INFO      [watchdog]  Watchdog observer stopped.
