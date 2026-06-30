@@ -18,9 +18,11 @@
 
 > 📹 **Watch the daemon running in real time**
 
-https://github.com/USERNAME/system-backup-daemon/assets/your-video
 
-*(Replace with your uploaded GitHub video.)*
+
+https://github.com/user-attachments/assets/6986d54f-aaba-4fb1-b68c-f6034a9a60f9
+
+
 
 ---
 
